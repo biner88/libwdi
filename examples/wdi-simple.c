@@ -40,7 +40,7 @@
  * Change these values according to your device if
  * you don't want to provide parameters
  */
-#define DESC        "Microsoft XBox Controller Type S"
+#define DESC        "ULooper DownLoad Firmware Update"
 #define VID         0x0483
 #define PID         0xdf11
 #define INF_NAME    "ULooper_DownLoad_Firmware_Update.inf"
