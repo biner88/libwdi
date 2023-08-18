@@ -41,10 +41,10 @@
  * you don't want to provide parameters
  */
 #define DESC        "Microsoft XBox Controller Type S"
-#define VID         0x045E
-#define PID         0x0289
-#define INF_NAME    "usb_device.inf"
-#define DEFAULT_DIR "usb_driver"
+#define VID         0x0483
+#define PID         0xdf11
+#define INF_NAME    "ULooper_DownLoad_Firmware_Update.inf"
+#define DEFAULT_DIR "ULooper_DownLoad_Firmware_Update"
 
 
 void usage(void)
