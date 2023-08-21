@@ -1975,10 +1975,10 @@ int LIBWDI_API wdi_install_driver(struct wdi_device_info* device_info, const cha
 	// If we are dealing with a path (e.g. option 'external_inf'), remove the directory part
 	params.inf_name = filename(inf);
 
-	if ((options == NULL) || (options->hWnd == NULL)) {
-		wdi_dbg("Using standard mode");
-		return install_driver_internal((void*)&params);
-	}
+	//if ((options == NULL) || (options->hWnd == NULL)) {
+	//	wdi_dbg("Using standard mode");
+	//	return install_driver_internal((void*)&params);
+	//}
 	wdi_dbg("Using progress bar mode");
 	return run_with_progress_bar(options->hWnd, install_driver_internal, (void*)&params);
 }
