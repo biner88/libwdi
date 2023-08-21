@@ -230,6 +230,7 @@ int __cdecl main(int argc, char** argv)
 	if (wdi_create_list(&ldev, &ocl) == WDI_SUCCESS) {
 		r = WDI_SUCCESS;
 		for (; (ldev != NULL) && (r == WDI_SUCCESS); ldev = ldev->next) {
+			oprintf("Installing...\n");
 			if ( (ldev->vid == dev.vid) && (ldev->pid == dev.pid) && (ldev->mi == dev.mi) &&(ldev->is_composite == dev.is_composite) ) {
 				
 				dev.hardware_id = ldev->hardware_id;
